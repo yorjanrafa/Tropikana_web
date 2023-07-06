@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --principal-width: 1000px;
+    --p-10: 10px;
+    --p-20: 20px;
+    --p-30: 30px;
+
+    --g-10: 10px;
+    --g-20: 20px;
+    --g-30: 30px;
+}
+
+
+header {
+    font-family: "Righteous";
+    background-image: url("../sources/imgs/header/cabina-radio-_-archivo.jpg_20896917.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 500px;
+
+}
+
+header .gradiente {
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+    font-size: 80px;
+    -webkit-text-stroke: 2px #ffff;
+}
+
+header p {
+    font-family: "Righteous", Regular;
+    font-size: 30px;
+    color: white;
+}
+
+.t {
+    color: #FC0100;
+}
+
+.r {
+    color: #F3BE22;
+}
+
+.o {
+    color: #3CC873; 
+}
+
+.p {
+    color: #F29627;
+}
+
+.i {
+    color: #269EFF;
+}
+
+.k {
+
+    color: #511F74;
+
+}
+
+.a1 {
+    color: #F3BE22;
+}
+
+.n {
+    color: #26A699;
+}
+
+.a2 {
+    color: #F24C3C;
+}
+
+section {
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.publicity-title {
+    width: 100%;
+    -webkit-text-stroke: 2px #040404;
+    font-family: "Righteous";
+    text-align: center;
+    color: #FF1616;
+    background-color: #FFC304;
+    padding: 20px 0;
+    font-size: 34px;
+}
+
+.publicity-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.programs {
+    background-color: #EEEEEE;
+    padding-right: 1vw;
+    padding-left: 1vw;
+
+}
+.programs-title, .comments-title{
+    font-family: 'Noto Sans Hebrew';
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 34px;
+}
+
+.galeria-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+
+}
+.galeria-cont>img{
+    object-fit: fill;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    /* cursor: pointer; */
+    /* overflow: hidden; */
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    width: 32%;
+    max-width: 220px;
+    min-width: 180px;
+}
+
+
+footer{
+    background: #222222;
+    color: #fff;
+    padding: 140px;
+}
+
+.social-media-title {
+    font-family: 'Noto Sans Hebrew';
+    margin: 30px;
+    text-align: center;
+    font-size: 25px;
+
+}
+.social-media {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.social-media a img {
+    width: 2.9rem;
+}
+
+
+@media (max-width: 1100px) {
+  .publicity-title {
+    font-size: 24px;
+    -webkit-text-stroke: 1.5px #040404;    
+    } 
+}
+
+@media (max-width: 800px) {
+
+    header {
+        height: 100vh;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    header p {
+        font-size: 20px;
+    }
+.publicity-content img{
+        max-width: 380px;
+    }
+  .publicity-title {
+    font-size: 16px;
+    -webkit-text-stroke: 1px #040404;    
+    } 
+    .programs-title, .comments-title {
+        font-size: 20px;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+footer{
+    padding: 80px;
+}
+    .social-media-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+.social-media a img {
+    width: 2rem;
+}
+}
